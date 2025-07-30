@@ -1,0 +1,9 @@
+general:
+    1. refactor full code for better SEO
+    2. download all resources (icons, fonts etc.) for better loading
+
+specific:
+    1. fix mobile nav
+    2. skills section modify UI (optional)
+    3. fix projects section Read Modre modal
+    
