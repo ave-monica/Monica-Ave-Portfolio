@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Morgan - Junior Web Developer & Virtual Assistant. Professional portfolio showcasing web development skills and virtual assistant services." />
+  <meta name="keywords" content="web developer, virtual assistant, portfolio, frontend developer, javascript, html, css" />
+  <meta name="author" content="Alex Morgan" />
+  <title>Alex Morgan | Web Developer & Virtual Assistant</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <span>Alex</span><span class="dot">.</span>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn-primary">Hire Me</a>
+      </nav>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="mobile-menu-btn">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <nav id="mobile-nav" class="nav-mobile">
+      <a href="#about" class="nav-link" data-mobile-link>About</a>
+      <a href="#skills" class="nav-link" data-mobile-link>Skills</a>
+      <a href="#projects" class="nav-link" data-mobile-link>Projects</a>
+      <a href="#services" class="nav-link" data-mobile-link>Services</a>
+      <a href="#contact" class="nav-link" data-mobile-link>Contact</a>
+      <a href="#contact" class="btn-primary" data-mobile-link>Hire Me</a>
+    </nav>
+  </header>
+  
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <!-- <div class="geometric-shape shape-1"></div>
+      <div class="geometric-shape shape-2"></div>
+      <div class="geometric-shape dot-grid"></div>
+      <div class="geometric-shape shape-3"></div>
+      <div class="geometric-shape shape-4"></div>
+      <div class="geometric-shape shape-5"></div> -->
+      
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-tagline">
+            <span class="line"></span>
+            <p>Web Developer & Virtual Assistant</p>
+            &nbsp;&nbsp;&nbsp;
+            <span class="line"></span>
+          </div>
+          
+          <h1 class="hero-title">
+            <div>Turning Ideas into</div>
+            <div> <span class="highlight">Digital Experiences</span></div>
+          </h1>
+          
+          <p class="hero-description">
+            I craft responsive websites and provide top-notch virtual assistant services 
+            to help businesses and individuals succeed in the digital world.
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-fancy">
+              Let's Talk
+              <i data-lucide="send"></i>
+            </a>
+            <a href="#projects" class="btn-outline">
+              View My Work
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="scroll-indicator">
+          <a href="#about">
+            <span>Discover More</span>
+            <div class="mouse-icon">
+              <div class="mouse-wheel"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-intro">
+              Hello! I'm Alex, a passionate web developer and virtual assistant based in New York.
+              With a keen eye for design and a love for clean code, I create websites that not only 
+              look great but also perform excellently.
+            </p>
+            
+            <p>
+              I specialize in building responsive websites and web applications that provide 
+              exceptional user experiences. Additionally, I offer virtual assistant services 
+              to help businesses manage their online presence effectively.
+            </p>
+            
+            <div class="about-details">
+              <div class="detail">
+                <span class="label">Name:</span>
+                <span>Alex Morgan</span>
+              </div>
+              <div class="detail">
+                <span class="label">Email:</span>
+                <span>alex@example.com</span>
+              </div>
+              <div class="detail">
+                <span class="label">Location:</span>
+                <span>New York, USA</span>
+              </div>
+              <div class="detail">
+                <span class="label">Availability:</span>
+                <span class="availability">Available for Freelance</span>
+              </div>
+            </div>
+            
+            <a href="#contact" class="btn-fancy">
+              Get In Touch
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+          
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">30+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="geometric-shape shape-6"></div>
+      
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        
+        <div class="skills-categories">
+          <h3 class="category-title">Web Development</h3>
+          <div class="skills-grid">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+              <span class="skill-name">HTML5</span>
+              <span class="proficiency high">Advanced</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+              <span class="skill-name">CSS3</span>
+              <span class="proficiency high">Advanced</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+              <span class="skill-name">JavaScript</span>
+              <span class="proficiency medium">Intermediate</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+              <span class="skill-name">React</span>
+              <span class="proficiency medium">Intermediate</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+              <span class="skill-name">Node.js</span>
+              <span class="proficiency low">Basic</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass">
+              <span class="skill-name">Sass</span>
+              <span class="proficiency medium">Intermediate</span>
+            </div>
+          </div>
+          
+          <h3 class="category-title">Tools & Others</h3>
+          <div class="skills-grid">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+              <span class="skill-name">Figma</span>
+              <span class="proficiency high">Advanced</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+              <span class="skill-name">Git</span>
+              <span class="proficiency medium">Intermediate</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+              <span class="skill-name">VS Code</span>
+              <span class="proficiency high">Advanced</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
+              <span class="skill-name">Photoshop</span>
+              <span class="proficiency medium">Intermediate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-project-id="project1">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop" alt="E-commerce Website">
+            </div>
+            <div class="project-card-overlay">
+              <h3>E-commerce Website</h3>
+              <p>A modern e-commerce platform with product filtering and cart functionality.</p>
+              <div class="project-buttons">
+                <button class="btn-small view-details">View Details</button>
+                <a href="https://github.com" target="_blank" class="btn-small-outline">
+                  <i data-lucide="github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card" data-project-id="project2">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Portfolio Template">
+            </div>
+            <div class="project-card-overlay">
+              <h3>Portfolio Template</h3>
+              <p>A customizable portfolio template for creative professionals.</p>
+              <div class="project-buttons">
+                <button class="btn-small view-details">View Details</button>
+                <a href="https://github.com" target="_blank" class="btn-small-outline">
+                  <i data-lucide="github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-card" data-project-id="project3">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=600&h=400&fit=crop" alt="Task Management App">
+            </div>
+            <div class="project-card-overlay">
+              <h3>Task Management App</h3>
+              <p>A task management application with drag-and-drop functionality.</p>
+              <div class="project-buttons">
+                <button class="btn-small view-details">View Details</button>
+                <a href="https://github.com" target="_blank" class="btn-small-outline">
+                  <i data-lucide="github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 4 -->
+          <div class="project-card" data-project-id="project4">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Weather Dashboard">
+            </div>
+            <div class="project-card-overlay">
+              <h3>Weather Dashboard</h3>
+              <p>A weather application with location-based forecasts and interactive charts.</p>
+              <div class="project-buttons">
+                <button class="btn-small view-details">View Details</button>
+                <a href="https://github.com" target="_blank" class="btn-small-outline">
+                  <i data-lucide="github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+      <div class="geometric-shape shape-7"></div>
+      
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i data-lucide="code"></i>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-description">
+              I create responsive, optimized websites that provide an excellent user experience across all devices.
+            </p>
+            <ul class="service-features">
+              <li>Custom Website Development</li>
+              <li>Responsive Design</li>
+              <li>E-commerce Solutions</li>
+              <li>Website Maintenance</li>
+            </ul>
+          </div>
+          
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i data-lucide="layout"></i>
+            </div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-description">
+              I design intuitive user interfaces and experiences that are both visually appealing and functional.
+            </p>
+            <ul class="service-features">
+              <li>User Interface Design</li>
+              <li>User Experience Optimization</li>
+              <li>Wireframing & Prototyping</li>
+              <li>Design Systems</li>
+            </ul>
+          </div>
+          
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i data-lucide="mail"></i>
+            </div>
+            <h3 class="service-title">Email Management</h3>
+            <p class="service-description">
+              I help manage your inbox, respond to emails, and organize your email communications efficiently.
+            </p>
+            <ul class="service-features">
+              <li>Inbox Organization</li>
+              <li>Email Response Management</li>
+              <li>Email Template Creation</li>
+              <li>Newsletter Management</li>
+            </ul>
+          </div>
+          
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i data-lucide="calendar"></i>
+            </div>
+            <h3 class="service-title">Scheduling</h3>
+            <p class="service-description">
+              I handle appointment scheduling, calendar management, and meeting coordination.
+            </p>
+            <ul class="service-features">
+              <li>Appointment Setting</li>
+              <li>Calendar Management</li>
+              <li>Meeting Coordination</li>
+              <li>Reminder Services</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <p class="contact-intro">
+              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            </p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div>
+                  <h3>Location</h3>
+                  <p>New York, NY, USA</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div>
+                  <h3>Email</h3>
+                  <p>alex@example.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i data-lucide="phone"></i>
+                </div>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i data-lucide="twitter"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <i data-lucide="instagram"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn-primary">
+                Send Message
+                <i data-lucide="send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#hero">
+            <span>Alex</span><span class="dot">.</span>
+          </a>
+          <p>Web Developer & Virtual Assistant</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-nav">
+            <h3>Navigation</h3>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+          </div>
+          
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>
+              <i data-lucide="mail" class="icon-small"></i>
+              alex@example.com
+            </p>
+            <p>
+              <i data-lucide="phone" class="icon-small"></i>
+              +1 (555) 123-4567
+            </p>
+          </div>
+          
+          <div class="footer-social">
+            <h3>Connect</h3>
+            <div class="social-icons">
+              <a href="#" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="#" aria-label="GitHub">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i data-lucide="twitter"></i>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <i data-lucide="instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 Alex Morgan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Project Modals -->
+  <div class="modal-container" id="modal-container">
+    <div class="modal-overlay"></div>
+    
+    <!-- Project 1 Modal -->
+    <div class="modal" id="modal-project1">
+      <div class="modal-header">
+        <h3>E-commerce Website</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-content">
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=900&h=500&fit=crop" alt="E-commerce Website">
+        <div class="modal-details">
+          <div class="project-info">
+            <h4>Project Overview</h4>
+            <p>
+              A fully responsive e-commerce platform built with modern web technologies. 
+              The website features product filtering, sorting, shopping cart functionality, 
+              user authentication, and a streamlined checkout process.
+            </p>
+            
+            <h4>Technologies Used</h4>
+            <ul class="tech-stack">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+            </ul>
+            
+            <h4>Key Features</h4>
+            <ul>
+              <li>Responsive design for all device sizes</li>
+              <li>Advanced product filtering and sorting</li>
+              <li>Shopping cart with persistent storage</li>
+              <li>User authentication and profiles</li>
+              <li>Admin dashboard for product management</li>
+              <li>Secure payment processing</li>
+            </ul>
+            
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn-small">Live Demo</a>
+              <a href="https://github.com" target="_blank" class="btn-small-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project 2 Modal -->
+    <div class="modal" id="modal-project2">
+      <div class="modal-header">
+        <h3>Portfolio Template</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-content">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&h=500&fit=crop" alt="Portfolio Template">
+        <div class="modal-details">
+          <div class="project-info">
+            <h4>Project Overview</h4>
+            <p>
+              A customizable portfolio template designed for creative professionals. This template 
+              features a clean design with smooth animations, dark/light mode toggle, and easily 
+              customizable sections.
+            </p>
+            
+            <h4>Technologies Used</h4>
+            <ul class="tech-stack">
+              <li>HTML5</li>
+              <li>CSS3/SASS</li>
+              <li>JavaScript</li>
+            </ul>
+            
+            <h4>Key Features</h4>
+            <ul>
+              <li>Responsive design</li>
+              <li>Customizable color schemes</li>
+              <li>Portfolio gallery with filtering</li>
+              <li>Contact form with validation</li>
+              <li>Smooth scrolling and animations</li>
+              <li>SEO optimized</li>
+            </ul>
+            
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn-small">Live Demo</a>
+              <a href="https://github.com" target="_blank" class="btn-small-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project 3 Modal -->
+    <div class="modal" id="modal-project3">
+      <div class="modal-header">
+        <h3>Task Management App</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-content">
+        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=900&h=500&fit=crop" alt="Task Management App">
+        <div class="modal-details">
+          <div class="project-info">
+            <h4>Project Overview</h4>
+            <p>
+              A task management application with drag-and-drop functionality that helps users organize 
+              their tasks efficiently. The app includes features such as task categories, due dates, 
+              priority levels, and progress tracking.
+            </p>
+            
+            <h4>Technologies Used</h4>
+            <ul class="tech-stack">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Firebase</li>
+            </ul>
+            
+            <h4>Key Features</h4>
+            <ul>
+              <li>Drag-and-drop task organization</li>
+              <li>Task categories and tags</li>
+              <li>Due date reminders</li>
+              <li>Priority level indicators</li>
+              <li>Progress tracking</li>
+              <li>User authentication</li>
+              <li>Data persistence</li>
+            </ul>
+            
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn-small">Live Demo</a>
+              <a href="https://github.com" target="_blank" class="btn-small-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project 4 Modal -->
+    <div class="modal" id="modal-project4">
+      <div class="modal-header">
+        <h3>Weather Dashboard</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-content">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=500&fit=crop" alt="Weather Dashboard">
+        <div class="modal-details">
+          <div class="project-info">
+            <h4>Project Overview</h4>
+            <p>
+              A weather dashboard application that provides real-time weather information 
+              based on user location or search. The app displays current conditions, hourly and 
+              5-day forecasts, with interactive charts for temperature, humidity, and wind speed.
+            </p>
+            
+            <h4>Technologies Used</h4>
+            <ul class="tech-stack">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Chart.js</li>
+              <li>OpenWeather API</li>
+            </ul>
+            
+            <h4>Key Features</h4>
+            <ul>
+              <li>Current weather conditions</li>
+              <li>Hourly forecast</li>
+              <li>5-day forecast</li>
+              <li>Interactive weather charts</li>
+              <li>Location-based weather</li>
+              <li>Search functionality for any location</li>
+              <li>Weather alerts and notifications</li>
+            </ul>
+            
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn-small">Live Demo</a>
+              <a href="https://github.com" target="_blank" class="btn-small-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scroll to top button -->
+  <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+    <i data-lucide="chevron-up"></i>
+  </button>
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
